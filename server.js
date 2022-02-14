@@ -24,3 +24,6 @@ app.get('/users/:id',function(req,res){
 })
 
 app.listen(8000,function(){console.log('server is listening')})
+
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
